@@ -1,0 +1,40 @@
+{
+  "name": "hq-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "dependencies": {
+    "buffer": "^5.0.5",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "ws": "^2.2.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.6.0",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "~6.1.18",
+    "babel-preset-react": "~6.1.18",
+    "babel-preset-stage-0": "~6.1.18",
+    "css-loader": "^0.9.0",
+    "jsx-loader": "^0.12.2",
+    "less": "^1.5",
+    "less-loader": "^0.7.7",
+    "postcss-loader": "^1.2.1",
+    "style-loader": "^0.8.1",
+    "webpack": "^1.5.3",
+    "google-protobuf": "^3.2.0"
+  },
+  "scripts": {
+    "start": "npm run webpack & npm run serve",
+    "start-win": "start npm run webpack && start npm run serve",
+    "webpack": "webpack --progress --colors --watch --config webpack.config.js",
+    "serve": "http-server -p 8000"
+  },
+  "keywords": [
+    "websocket"
+  ],
+  "author": "cathy",
+  "license": "ISC"
+}

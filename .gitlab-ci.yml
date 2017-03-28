@@ -1,0 +1,13 @@
+before_script:
+    - mkdir -p ~/.gitlab-ci/npm/node_modules
+    - ln -s ~/.gitlab-ci/npm/node_modules
+    - npm install
+
+build:
+    stage: build
+    script:
+        - sh build.sh
+    artifacts:
+        name: "0.1.0.$(date +%Y%m%d)"
+        paths:
+            - dir/

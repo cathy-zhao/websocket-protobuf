@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package protobuf;
+
+
+message abc_req
+{
+    required rank_option options    =1;
+}
+
+message abc_rep
+{
+    required rank_option options            =1;
+    repeated blockRank_repeated dataArr     =2;
+}
+
